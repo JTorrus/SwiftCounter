@@ -14,6 +14,7 @@
 		EF18D7CC2035E62000F0266A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF18D7CA2035E62000F0266A /* LaunchScreen.storyboard */; };
 		EF18D7D72035E62000F0266A /* SimpleiOsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF18D7D62035E62000F0266A /* SimpleiOsAppTests.swift */; };
 		EF18D7E22035E62000F0266A /* SimpleiOsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF18D7E12035E62000F0266A /* SimpleiOsAppUITests.swift */; };
+		EF18D7F02035E96800F0266A /* CounterBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF18D7EF2035E96800F0266A /* CounterBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EF18D7DD2035E62000F0266A /* SimpleiOsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleiOsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF18D7E12035E62000F0266A /* SimpleiOsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleiOsAppUITests.swift; sourceTree = "<group>"; };
 		EF18D7E32035E62000F0266A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF18D7EF2035E96800F0266A /* CounterBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				EF18D7C12035E62000F0266A /* AppDelegate.swift */,
 				EF18D7C32035E62000F0266A /* ViewController.swift */,
+				EF18D7EF2035E96800F0266A /* CounterBrain.swift */,
 				EF18D7C52035E62000F0266A /* Main.storyboard */,
 				EF18D7C82035E62000F0266A /* Assets.xcassets */,
 				EF18D7CA2035E62000F0266A /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF18D7C42035E62000F0266A /* ViewController.swift in Sources */,
+				EF18D7F02035E96800F0266A /* CounterBrain.swift in Sources */,
 				EF18D7C22035E62000F0266A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
