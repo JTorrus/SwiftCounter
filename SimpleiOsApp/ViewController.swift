@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var historyDisplay: UITextView!
     
     var counterClass = CounterBrain()
     
@@ -18,7 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         checkingCounter()
         checkingNegativeValue()
+        historyDisplay.isEditable = false
         display.text = "\(counterClass.counter)"
+        historyDisplay.text = counterClass.historyDisplay
+        resetButton.isEnabled = false
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -32,13 +36,19 @@ class ViewController: UIViewController {
             switch senderTitle {
             case "+":
                 counterClass.plusOperation()
+                counterClass.writeInHistory(sender)
                 display.text = "\(counterClass.counter)"
+                historyDisplay.text = counterClass.historyDisplay
             case "-":
                 counterClass.minusOperation()
+                counterClass.writeInHistory(sender)
                 display.text = "\(counterClass.counter)"
+                historyDisplay.text = counterClass.historyDisplay
             case "Reset":
                 counterClass.reset()
+                counterClass.clearHistory()
                 display.text = "\(counterClass.counter)"
+                historyDisplay.text = counterClass.historyDisplay
             default:
                 print("Botón no identificado")
             }
@@ -63,4 +73,6 @@ class ViewController: UIViewController {
             display.textColor = UIColor.black
         }
     }
+    
+    
 }

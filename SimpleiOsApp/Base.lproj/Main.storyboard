@@ -60,6 +60,15 @@
                                     <action selector="actionPerformed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Rc-Sr-Apw"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nrk-6D-tsy">
+                                <rect key="frame" x="16" y="269" width="343" height="378"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="378" id="10N-b6-0Ar"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -69,10 +78,14 @@
                             <constraint firstItem="hd5-24-8ka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="98F-pJ-mBv"/>
                             <constraint firstItem="9YE-XE-zFh" firstAttribute="top" secondItem="HXb-vz-wPu" secondAttribute="bottom" constant="8" id="B1M-VR-IFZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q74-1q-dm0" secondAttribute="trailing" constant="8" id="Ex0-VF-5nQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nrk-6D-tsy" secondAttribute="bottom" constant="20" id="LTa-cC-Rga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nrk-6D-tsy" secondAttribute="trailing" constant="16" id="VYU-ee-Z8W"/>
                             <constraint firstItem="q74-1q-dm0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="WgN-fS-cVD"/>
+                            <constraint firstItem="nrk-6D-tsy" firstAttribute="top" secondItem="q74-1q-dm0" secondAttribute="bottom" constant="67" id="X8o-fb-BBR"/>
                             <constraint firstItem="HXb-vz-wPu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="XLV-8L-i9m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HXb-vz-wPu" secondAttribute="trailing" constant="8" id="XS5-Jr-vXo"/>
                             <constraint firstItem="q74-1q-dm0" firstAttribute="top" secondItem="hd5-24-8ka" secondAttribute="bottom" constant="8" id="g3F-Bz-esV"/>
+                            <constraint firstItem="nrk-6D-tsy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ju1-ph-NLS"/>
                             <constraint firstItem="hd5-24-8ka" firstAttribute="top" secondItem="HXb-vz-wPu" secondAttribute="bottom" constant="8" id="pcF-zw-ISo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9YE-XE-zFh" secondAttribute="trailing" constant="16" id="wlS-z4-XPy"/>
                         </constraints>
@@ -80,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="display" destination="HXb-vz-wPu" id="CJ7-Ym-syR"/>
+                        <outlet property="historyDisplay" destination="nrk-6D-tsy" id="wRq-YJ-OJ4"/>
                         <outlet property="resetButton" destination="q74-1q-dm0" id="9P8-c7-YZ6"/>
                     </connections>
                 </viewController>
